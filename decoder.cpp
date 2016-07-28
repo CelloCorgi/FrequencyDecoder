@@ -7,7 +7,7 @@ using namespace std;
 
 const int ALPHA_SIZE = 26;
 const string ACT_FREQ = "zqxjkvbpygfwmucldrhsnioate";
-const string FILENAME = "text.txt";
+const string FILE_NAME = "text.txt";
 
 //Comparitor for sorting by the second value of a pair
 struct Comparitor {
