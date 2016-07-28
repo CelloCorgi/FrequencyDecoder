@@ -32,9 +32,9 @@ void findFreq(string fileName, vector<pair<char, int> >& vect) {
     ins.open(fileName);
     char nextChar;
     while (ins >> nextChar) {
-        if (isAlpha(nextChar)) {
-            ++(vect[nextChar - 'a'].second);
-        }
+
+        ++(vect[nextChar - 'a'].second);
+        
     }
     ins.close();
     sort(vect.begin(), vect.end(), Comparitor());
