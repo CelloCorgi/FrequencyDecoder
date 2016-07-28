@@ -50,10 +50,10 @@ void decode(string fileName, unordered_map<char, char> & keyMap) {
     char nextChar = ' ';
     while (ins >> nextChar) {
         cout << keyMap[nextChar];
+        ++counter;
         if (counter % 100 == 0) {
             cout << endl;
         }
-        ++counter;
     }
     ins.close();
 }
