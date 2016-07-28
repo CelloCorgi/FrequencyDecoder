@@ -73,7 +73,7 @@ int main() {
     unordered_map<char, char> decodingKey;
     decodingKey.reserve(ALPHA_SIZE);
     
-    //Build Map: Hash map where key == encrypted char, and val == englishLetter
+    //Build Map: Hash map where key == encryptedChar, and val == englishLetter
     //Can change this map by messing around with the string ACT_FREQ
     for (int i = 0; i < ALPHA_SIZE; ++i) {
         decodingKey.insert(pair<char, char>(freqCount[i].first, ACT_FREQ[i]));
